@@ -82,11 +82,30 @@
     <!-- Hero  -->
     <div class="hero-section">
         <div class="bg-video d-center">
-            <video muted loop autoplay oncanplay="this.muted=true">
+            <video muted loop autoplay id="myVideo">
                 <source src="../assets/brand/video/Macrou3i-Reveal-ar.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <img id="muteImage" class="volume-icon" src="../assets/brand/volume_mute.png" alt="">
         </div>
+        <script defer>
+            // Get references to the image and video elements
+            var muteImage = document.getElementById("muteImage");
+            var myVideo = document.getElementById("myVideo");
+
+            // Add a click event listener to the image
+            muteImage.addEventListener("click", function() {
+                // Toggle the muted property of the video
+                myVideo.muted = !myVideo.muted;
+
+                // Update the image source based on the mute state
+                if (myVideo.muted) {
+                    muteImage.src = "../assets/brand/volume_mute.png";
+                } else {
+                    muteImage.src = "../assets/brand/volume.png";
+                }
+            });
+        </script>
         <div class="hero-text">
             <div class="hero-header">
                 <img class="img-contain" src="../assets/brand/title_ar.png" alt="">

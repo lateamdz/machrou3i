@@ -109,6 +109,13 @@ body {
     width: 100vw;
 }
 
+.hero-section .bg-video .volume-icon{
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
 .hero-section .bg-video {
 
     aspect-ratio: 16 / 9;

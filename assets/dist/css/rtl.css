@@ -44,6 +44,11 @@ kbd {
 .ar h1.fw-bold{
     line-height: inherit;
 }
+.ar .hero-section .bg-video .volume-icon{
+    right:auto;
+    left: 20px;
+    bottom: 20px;
+}
 .ar .hero-section .hero-text {
     left: auto;
     right: 5%;
