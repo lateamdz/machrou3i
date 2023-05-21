@@ -111,9 +111,9 @@ body {
 
 .hero-section .bg-video .volume-icon{
     height: 40px;
-    position: absolute;
-    right: 20px;
     bottom: 20px;
+    right: 20px;
+    position: absolute;
     cursor: pointer;
 }
 .hero-section .bg-video {
@@ -191,6 +191,11 @@ body {
         font-size: 2vw;
         padding: 0.2rem 5vw;
         border-radius: 0.18rem;
+    }
+    .hero-section .bg-video .volume-icon{
+        height: 20px;
+        bottom: 5px;
+        right: 5px;
     }
 }
 
